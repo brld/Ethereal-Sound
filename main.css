@@ -81,7 +81,11 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 
-	margin: 56px 24px 0px 24px;
+	/* margin: 56px 24px 0px 24px; */
+	padding-top: 56px;
+
+	background: rgba(0, 0, 0, 0.7);
+
 }
 
 h1 {
@@ -141,7 +145,7 @@ nav a {
 nav a:before {
 	margin-bottom: -2px;
   content: "";
-  position: absolute;
+	position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
@@ -201,6 +205,18 @@ button {
 
 button:hover:active {
 	opacity: 0.5;
+}
+
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#footer-text {
+	font-size: 100%;
 }
 
 @media (hover: none) {
