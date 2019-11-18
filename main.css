@@ -84,7 +84,7 @@ main {
 	/* margin: 56px 24px 0px 24px; */
 	padding-top: 56px;
 
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -193,6 +193,16 @@ p {
 	font-size: 25px;
 }
 
+form {
+	margin: 0 10% 5% 10%;
+}
+
+#main-form {
+	margin: 0 20%;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 20px;
+}
+
 a.button:hover,
 button:hover {
 	transform: perspective(400px) translateZ(24px);
@@ -220,6 +230,8 @@ footer {
 }
 
 input[type=text], input[type=email], select, textarea {
+	color: white;
+	background-image: linear-gradient(to bottom right, #6C0A6C, #8D1784);
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
@@ -251,13 +263,23 @@ input[type=submit]:hover {
 	text-transform: uppercase;
 	font-size: 85%;
 	font-family: 'Cabin', sans-serif;
+	/* color: #9b1f96; */
 	color: white;
+	font-weight: bold;
   border-radius: 5px;
   padding: 20px;
 }
 
 textarea {
+	color: white;
 	font-family: 'Cabin', sans-serif;
+	background-color: transparent;
+}
+
+::placeholder {
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	font-size: 95%;
 }
 
 @media (hover: none) {
