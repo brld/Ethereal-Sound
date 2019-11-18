@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <title>Ethereal Sound</title>
+  </head>
+  <body>
+    <header>
+			<a href="index" id="logo">
+				<img src="img/logo.png" alt="Ethereal Sound" />
+			</a>
+
+			<nav>
+				<a href="index">Home</a>
+				<a href="networks">Networks</a>
+        <a href="Submit">Submit</a>
+				<a href="contact" class="selected">Contact</a>
+			</nav>
+		</header>
+
+    <main>
+			<h1>Contact Us</h1>
+
+      <div class="container">
+        <form action="action_page.php">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+
+          <label for="message">Subject</label>
+          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+		</main>
+
+    <footer><p id="footer-text">&copy; 2019 Ethereal Sound</p></footer>
+  </body>
+</html>
